@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>{% block title %} {% endblock title %}</title>
+        {% include 'head/custom.html' %}
+    </head>
+    <body class="bg-amber-200 text-slate-600">
+        <div class="sm:p-20 p-5 font-sans font-bold list-none">
+            {% block content1 %}
+
+            {% endblock content1 %}
+        </div>
+
+        
+            {% block content2 %}
+                
+            {% endblock content2 %}
+
+            
+            {% block content3 %}
+                
+            {% endblock content3 %}
+
+            
+            {% block content4 %}
+                
+            {% endblock content4 %}
+
+            
+            {% block footer %}
+                
+            {% endblock footer %}
+                
+                
+                
+            
+    </body>
+</html>

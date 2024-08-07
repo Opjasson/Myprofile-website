@@ -1,0 +1,64 @@
+{% extends 'baseblog.html' %}
+{% load static %}
+
+{% block title %}
+    my-blog
+{% endblock title %}
+
+
+{% block home %}
+    <div class="bg-[url('/static/img/my3.jpg')] bg-cover bg-top bg-no-repeat h-screen">
+        <div class="flex flex-wrap justify-between p-5">
+            <div class="sm:text-4xl h-fit text-base flex sm:ml-8 ml-0 border-b-2 pb-2 border-yellow-400">
+                <img class="sm:h-14 h-7" src="{% static 'img/man.png' %}" alt="">
+                <h1 class="bg-slate-200 h-fit pb-1 px-1 rounded-md">My-blog</h1>
+            </div>
+    
+            <div class="list-none text-xl w-1/2 justify-evenly md:flex sm:flex hidden">
+                <li class="bg-yellow-400 hover:bg-yellow-500 hover:text-white p-2 rounded-md h-fit">
+                    <a class="font-bold" href="">Arduino</a>
+                </li>
+    
+                <li class="bg-yellow-400 hover:bg-yellow-500 hover:text-white p-2 rounded-md h-fit">
+                    <a class="font-bold" href="">Web Development</a>
+                </li>
+    
+                <li class="bg-yellow-400 hover:bg-yellow-500 hover:text-white p-2 rounded-md h-fit">
+                    <a class="font-bold" href="">Design Grafis</a>
+                </li>
+    
+                <li class="bg-yellow-400 hover:bg-yellow-500 hover:text-white p-2 rounded-md h-fit">
+                    <a class="font-bold" href="">Mentoring</a>
+                </li>
+            </div>
+            <button class="sm:hidden block mr-5 mb-5" id="button">
+                <img class="h-8" src="{% static 'img/menu.png' %}" alt="">
+            </button>
+        </div>
+
+
+        <div id="drop-menu" class="bg-slate-700 bg-opacity-80 hidden absolute right-7 top-52 text-base text-white font-bold w-fit p-10 rounded-md">
+            <ul>
+                <li class="mb-8">
+                    <a class="hover:text-yellow-500 hover:border-b pb-3" href="">Arduino</a>
+                </li>
+
+                <li class="mb-8">
+                    <a class="hover:text-yellow-500 hover:border-b pb-3" href="">Web Development</a>
+                </li>
+
+                <li class="mb-8">
+                    <a class="hover:text-yellow-500 hover:border-b pb-3" href="">Design grafis</a>
+                </li>
+
+                <li class="mb-8">
+                    <a class="hover:text-yellow-500 hover:border-b pb-3" href="">Mentoring</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="{% static 'js/menubar.js' %}"></script>
+{% endblock home %}
+    
+    

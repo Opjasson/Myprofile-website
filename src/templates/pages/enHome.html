@@ -1,0 +1,210 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    page home
+{% endblock title %}
+{% include 'head/custom.html' %}
+
+{% block content1 %}
+<nav class="flex justify-between sm:mb-36 mb-28">
+    <div class="font-serif sm:text-2xl text-base flex">
+        <img src="{% static 'img/man.png' %}" class=" h-10 mr-3 mt-1" alt="">
+        <div>
+            <h1>Azmi Ghazy</h1>
+            <h1>Asyrof</h1>
+        </div>
+    </div>
+    <ul class="flex sm:text-xl text-sm">
+        <li class="mr-3">
+            <a href="{% url 'home' %}">Indonesia</a>
+        </li>
+
+        <li>
+            <a href="{% url 'enHome' %}">English</a>
+        </li>
+    </ul>
+</nav>
+<div class="
+            sm:flex
+            text-left
+            font-bold 
+            sm:w-3/4
+            w-80 
+            m-auto 
+            sm:mb-16
+            ">
+    <div class="sm:mb-0 mb-5 ">
+        <h1 class="font-pop border-b-slate-500 border-b-2 sm:text-4xl pb-3 border-dotted  text-base mb-2">Saya Azmi Ghazy Asyrof</h1>
+        <p>Part-time worker as a lecturer in Robotics, Web Development, Graphic Design</p>
+    </div>
+    <img src="{% static 'img/my.jpg' %}" class="rounded-full sm:h-72 h-28 sm:ml-0 ml-36 sm:mx-1 sm:mb-0 mb-5" alt="">
+    <div>
+        <blockquote class="text-right sm:mt-32 border-dotted border-2 p-5 rounded-3xl border-slate-500">
+            "Working professionally and prioritizing customer satisfaction is a priority."
+        </blockquote>
+        <a href="" class="sm:ml-12 hover:text-red-600">Blog -></a>
+    </div>
+</div>
+{% endblock content1 %}
+    
+
+{% block content2 %}
+<div class="max-w-full
+  h-28
+  sm:text-2xl 
+  text-base 
+  font-bold 
+  sm:pt-10 
+  pt-5 
+  bg-green-300 
+  sm:flex 
+  justify-center 
+  text-center">
+    <h1>Mentoring</h1>
+    <h1 class="sm:mx-14">Design graphics</h1>
+    <h1>Web Development</h1>
+</div>
+<div class="text-center mt-20">
+    <h1 class="font-extrabold text-3xl mt-10">Mentoring and Speaking</h1>
+    <p>I am usually called to fill extracurricular activities from elementary school to vocational high school</p>
+    <div class="flex flex-wrap justify-center sm:text-base text-sm mt-16 text-left">
+        <div class="w-56  rounded-3xl bg-green-300 overflow-hidden hover:bg-green-400 group ">
+            <a href="">
+                <div class="bg-[url('/static/img/my1.jpg')] h-40 bg-cover group-hover:cursor-pointer"></div>
+                <h1 class="ml-4 mt-2 text-slate-900 font-bold group-hover:border-b-2">SD Budi Mulia Banjaran</h1>
+                <p class="p-4 group-hover:text-white group-hover:cursor-pointer">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos animi natus rem nihil eum, ratione odio quaerat similique temporibus tempore.</p>
+            </a>
+        </div>
+    
+        <div class="w-56 rounded-3xl bg-green-300 overflow-hidden hover:bg-green-400 group my-5 mx-5 ">
+            <a href="">
+                <div class="bg-[url('/static/img/my2.jpg')] h-40 bg-cover group-hover:cursor-pointer"></div>
+                <h1 class="ml-4 mt-2 text-slate-900 font-bold group-hover:border-b-2">SMP It Slawi</h1>
+                <p class="p-4 group-hover:text-white group-hover:cursor-pointer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, consequatur! Id accusamus nulla dolor quod nemo et perferendis modi doloribus.</p>
+            </a>
+        </div>
+    
+        <div class="w-56 rounded-3xl bg-green-300 overflow-hidden hover:bg-green-400 group  ">
+            <a href="">
+                <div class="bg-[url('/static/img/my3.jpg')] h-40 bg-cover group-hover:cursor-pointer"></div>
+                <h1 class="ml-4 mt-2 text-slate-900 font-bold group-hover:border-b-2">SMK An-nur Slawi</h1>
+                <p class="p-4 group-hover:text-white group-hover:cursor-pointer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nobis molestias, repellat dicta excepturi cum ipsum aut perferendis tenetur obcaecati!</p>
+            </a>
+        </div>
+    </div>
+
+</div>
+{% endblock content2 %}
+
+
+{% block content3 %}
+
+    <h1 class="font-extrabold w-fit ml-10 text-3xl pb-8 mt-16 mb-10 border-b-2 border-slate-600 border-dotted">Web and Design</h1>
+    <div class="flex justify-between">
+        <div class="w-96 aspect-[4/3] rounded-2xl overflow-hidden group hover:w-80 transition-all duration-500">
+            <div class="bg-[url('/static/img/porto1.jpg')] h-full w-full bg-cover bg-center group-hover:scale-125 group-hover:rotate-2 transition-all duration-500"></div>
+        </div>
+        <div class="w-96 sm:mr-96 mx-8 border-b-2 border-slate-600">
+            <h2 class="sm:text-xl text-base font-bold font-pop sm:mb-3 mb-0">Create a website using system CRUD</h2>
+            <p class="sm:text-base text-sm ">Which makes it easier for us to manage data and content on the website so that it is more efficient.</p>
+        </div>
+    </div>
+
+    <div class="flex mt-28 justify-between">
+        <div class="w-96 sm:ml-96 mx-8">
+            <h2 class="sm:text-xl text-base font-bold font-pop sm:mb-3 mb-0">Poster design and content design</h2>
+            <p class="sm:text-base text-sm">Presenting a design that is always updated with the latest content developments. Created with various licensed editing software.</p>
+        </div>
+        <div class="w-96 aspect-[4/3] rounded-2xl  overflow-hidden group hover:w-80 transition-all duration-500">
+            <div class="bg-[url('/static/img/porto2.jpg')] h-full w-full bg-cover group-hover:scale-125 group-hover:rotate-2 transition-all duration-500"></div>
+        </div>
+    </div>
+
+{% endblock content3 %}
+
+
+{% block content4 %}
+    <div class="flex mt-10 sm:text-2xl text-base font-bold bg-green-500 sm:h-32 h-20 justify-center sm:pt-12 pt-6">
+        <h1>Plugin</h1>
+        <h1 class="mx-12">Tea_Bo Robotika</h1>
+        <h1>Bimbel Ernest</h1>
+    </div>    
+
+    <div class="sm:w-5/12 w-80 mt-10 bg-slate-200 m-auto rounded-3xl sm:p-0 p-6">
+        <div class="sm:w-96 m-auto py-10">
+            <h1 class="text-3xl font-bold border-b-2 border-slate-600 w-fit pb-4 mb-7">
+                Start <span class="text-slate-800">Working</span> Together ?
+            </h1>
+
+            <p class="mb-7 text-base">I live in Indonesia. Have a team that is competent in their field. I will help you in :</p>
+            <ul class="list-disc ml-5 mb-9">
+                <li>
+                    <p>Develop a Website</p>
+                </li>
+                <li>
+                    <p>Graphic design of pamphlets, posters etc.</p>
+                </li>
+                <li>
+                    <p>Mentoring student</p>
+                </li>
+                <li>
+                    <p>Collaboration freelancers</p>
+                </li>
+            </ul>
+
+            <a href="/" class="bg-slate-500 text-2xl text-white font-bold px-5 py-1 rounded-xl sm:ml-28 ml-16 hover:bg-slate-700">Email me</a>
+
+        </div>
+    </div>
+{% endblock content4 %}
+
+
+{% block footer %}
+    <footer class="max-w-full mt-28 text-center h-96 bg-green-300 pt-5">
+        <div class="w-1/2 flex justify-around m-auto text-center">
+            <a class="bg-yellow-200 w-28 text-center pt-3 rounded-xl shadow-xl hover:scale-90 delay-150 transition-all" href="">
+                <img class="h-16 mx-auto" src="{% static 'img/email.png' %}" alt="">
+                <p>Email</p>
+            </a>
+            <a class="bg-yellow-200 w-28 text-center pt-3 rounded-xl shadow-xl hover:scale-90 delay-150 transition-all" href="">
+                <img class="h-16 mx-auto" src="{% static 'img/facebook.png' %}" alt="">
+                <p>Facebook</p>
+            </a>
+            <a class="bg-yellow-200 w-28 text-center pt-3 rounded-xl shadow-xl hover:scale-90 delay-150 transition-all" href="">
+                <img class="h-16 mx-auto" src="{% static 'img/github-sign.png' %}" alt="">
+                <p>Github</p>
+            </a>
+            <a class="bg-yellow-200 w-28 text-center pt-3 rounded-xl shadow-xl hover:scale-90 delay-150 transition-all" href="">
+                <img class="h-16 mx-auto" src="{% static 'img/instagram.png' %}" alt="">
+                <p>Instagram</p>
+            </a>
+            <a class="bg-yellow-200 w-28 text-center pt-3 rounded-xl shadow-xl hover:scale-90 delay-150 transition-all" href="">
+                <img class="h-16 mx-auto" src="{% static 'img/linkedin.png' %}" alt="">
+                <p>Linkedin</p>
+            </a>
+
+        </div>
+        <div class="mt-10 text-xl font-semibold w-fit m-auto">
+            <ul>
+                <li class="border-b-2">
+                    <a href="">Blog</a>
+                </li>
+
+                <li class="border-b-2 my-7">
+                    <a href="">Accesibility statement</a>
+                </li>
+
+                <li class="border-b-2">
+                    <a href="">Privacy Policy</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+{% endblock footer %}
+    
+    
+    
+    
+    
+    

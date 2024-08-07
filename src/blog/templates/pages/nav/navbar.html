@@ -1,0 +1,59 @@
+{% load static %}
+<nav
+    class="bg-slate-800 sm:h-24 h-fit p-6 relative flex flex-wrap sm:justify-between">
+    <div class="sm:flex block">
+        <li
+            class="flex list-none bg-slate-200 rounded-md p-1 mb-2 sm:mr-2 sm:w-72">
+            <img
+                class="sm:h-11 h-8"
+                src="{% static 'img/email.png' %}"
+                alt="email" />
+            <p class="sm:text-base text-sm mt-2 ml-3">
+                azmitheusos333@gmail.com
+            </p>
+        </li>
+
+        <li class="flex list-none bg-slate-200 rounded-md p-1 mb-2 sm:w-72">
+            <img
+                class="sm:h-11 h-8"
+                src="{% static 'img/telepon.png' %}"
+                alt="email" />
+            <p class="sm:text-base text-sm mt-2 ml-3">Telepon: 087895031524</p>
+        </li>
+        <p></p>
+    </div>
+
+    <div
+        class="bg-yellow-400 group sm:w-60 sm:pt-1 md:block sm:block hidden w-32 mr-16 text-center group">
+        <button
+            class="sm:text-xl text-base font-bold mt-2 pb-1 group-hover:bg-yellow-500 group-hover:text-white rounded-md shadow-inner bg-gray-200 sm:w-44 w-fit"
+            id="myButton">
+            Language
+        </button>
+    </div>
+
+    <div
+        id="myDiv"
+        class="absolute hidden top-20 right-24 pr-16 pl-3 rounded-lg py-3 list-none bg-gray-200">
+        <li class="flex group border-b-2 border-slate-400 sm:w-36 w-fit">
+            <img
+                class="h-8"
+                src="{% static 'img/indoflag.png' %}"
+                alt="Indonesia" />
+            <a class="block group-hover:text-yellow-400 mt-1 ml-2" href="/"
+                >Indonesia</a
+            >
+        </li>
+        <li class="flex group">
+            <img
+                class="h-8"
+                src="{% static 'img/engflag.png' %}"
+                alt="English" />
+            <a class="block group-hover:text-yellow-400 mt-1 ml-2" href="/"
+                >English</a
+            >
+        </li>
+    </div>
+</nav>
+
+<script src="{% static 'js/dropdown.js' %}"></script>
